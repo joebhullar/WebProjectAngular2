@@ -1,0 +1,36 @@
+<h1>Hello world</h1>
+
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        User Information
+    </div>
+    <div class="panel-body">
+        <div class="container-fluid">
+        
+            <table border="1" class="table table-striped">
+                <thead>
+                 <tr>
+                     <th>Id</th>
+                     <th>postId</th>
+                     <th>Name</th>
+                     <th>Email</th>
+                     <th>Body</th>>
+                 </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let comment of Comments">
+                         
+                        <td>{{comment.id}}</td>
+                        <td>{{comment.postId}}</td>
+                        <td>{{comment.name}}</td>
+                        <td>{{comment.email}}</td>
+                        <td>{{comment.body}}</td>            
+                    </tr>
+                </tbody>    
+            </table>        
+            
+            </div>
+            </div>
+            </div>
+    

@@ -1,0 +1,6 @@
+[
+  {"id":1, "imageUrl":"./assets/Contact_Images/Saurabh.jpeg", "Name":"Saurabh Agarwal", "Designation":"Angular Trainer", "Phone":"98495 12345", "fUrl":"#", "tUrl":"#", "lUrl":"#" },
+  {"id":2, "imageUrl":"./assets/Contact_Images/Eleazer.jpeg", "Name":"Eleazer Patil", "Designation":"Angular Trainee", "Phone":"98495 54321", "fUrl":"https://twitter.com/eleazerpatil", "tUrl":"https://twitter.com/eleazerpatil", "lUrl":"https://twitter.com/eleazerpatil" },
+  {"id":3, "imageUrl":"./assets/Contact_Images/Sourav.jpeg", "Name":"Sourav Datta", "Designation":"Angular Trainee", "Phone":"98495 12354", "fUrl":"#", "tUrl":"#", "lUrl":"#" },
+  {"id":4, "imageUrl":"./assets/Contact_Images/Veda.jpeg", "Name":"Veda ", "Designation":"Angular Trainee", "Phone":"98495 65432", "fUrl":"#", "tUrl":"#", "lUrl":"#" }
+]

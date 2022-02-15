@@ -1,0 +1,81 @@
+<h1>Example of Template Driven From Component </h1>
+
+
+<div class="panel panel-primary">
+    <div class="panel-heading">Employee Information</div>
+
+    <div class="panel-body">
+        <form [formGroup]="mygrp" (ngSubmit)="SaveEmployee(mygrp.value)">
+            <table class="table" border="1">
+                <thead>
+                    <tr>
+                        <th>User Name</th>
+                        <td>
+                            <input type ="text" formControlName="username"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Password</th>
+                        <td>
+                            <input type ="password" formControlName="password"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Confirm Password</th>
+                        <td>
+                            <input type ="password" formControlName="confirmpassword"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Age</th>
+                        <td>
+                            <input type ="text" formControlName="age"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>
+                            <input type ="email" formControlName="email"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Phone No</th>
+                        <td>
+                            <input type ="tel" formControlName="phoneNo"/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>DOB</th>
+                        <td>
+                            <input type ="date" formControlName="Dob"/>
+                        </td>
+                    </tr>
+
+
+                     <tr>
+                        <th>DOB</th>
+                        <td>
+                            <input type ="date" formControlName="Dob"/>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        
+                        <td colspan="2">
+                            <button type="submit" class="btn btn-primary">Submit Employee</button>
+                        </td>
+                    </tr>
+
+
+
+                </thead>
+
+            </table>
+        </form>
+    </div>
+
+
+</div>
+ 

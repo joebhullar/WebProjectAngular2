@@ -1,0 +1,33 @@
+<div class="panel panel-primary">
+        <div class="panel-heading">
+            Product Information
+        </div>
+        <div class="panel-body">
+            <div class="container-fluid">
+                <table border="1" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Product</th>
+                            <th>Code</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor ="let product of products">
+                            <td> <img [src]='product.imageUrl' [title]='product.productName'
+                                 [style.width.px]='imageWidth' [style.margin.px]='imageMargin'/> </td>
+                            <td> <a [routerLink]="['/ProductDetail', product.productId]"
+                                    [queryParams]="{name:product.productName, img:product.imageUrl, price:product.price}"> 
+
+                                  {{product.productName | uppercase}}</a></td>
+                            <td>{{product.productCode}}</td>
+                            <td [ngStyle]="product.price>20000?{'color':'red'}:{'color':'green'}" >
+                                {{product.price | currency:'INR':'symbol-narrow'}}
+                            </td>
+                            <td>{{product.starRating}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
